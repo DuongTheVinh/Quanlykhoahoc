@@ -5,6 +5,8 @@ import Register from "../pages/Register";
 import Home from "../pages/Home";
 import Courses from "../pages/Courses";
 import CourseDetail from "../pages/CourseDetail";
+import ProIntro from "../pages/courses/ProIntro";
+import CourseTrial from "../pages/courses/CourseTrial";
 import Blog from "../pages/Blog";
 import BlogDetail from "../pages/BlogDetail";
 import Pricing from "../pages/Pricing";
@@ -30,6 +32,8 @@ const router = createBrowserRouter([
       { path: "/home", element: <Home /> },
       { path: "/courses", element: <Courses /> },
       { path: "/courses/:slug", element: <CourseDetail /> },
+      { path: "/courses/:slug/intro", element: <ProIntro /> },
+      { path: "/courses/:slug/trial", element: <CourseTrial /> },
       { path: "/blog", element: <Blog /> },
       { path: "/blog/:slug", element: <BlogDetail /> },
       { path: "/pricing", element: <Pricing /> },
